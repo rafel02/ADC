@@ -1,0 +1,22 @@
+Project - ADC use to measure voltage
+Hardware - Arduino mega 2560 pro
+Circuit - Voltage divider
+IDE - Arudino IDE
+
+***ADC*** 
+
+Arduio have 5 ADC pin. ADC input voltage is 0 - 5V. ADC resolutionis 10 bit. Digital value range 
+is from 0 to 2^10 (1023).  Resoultion is Vmax/ AdcRang. Digital input is Vin / Resolution.
+
+***Formula for voltage calculation***
+
+ADC value is digital value for input voltage. This value is to change to voltage. Formula for 
+change input value to voltage is Aout = digital value * (Vref/2^n – 1).
+
+ ***Example***
+
+Digital value = 512 and ADC is 10-bit with 5V Vref. But, we want to know that for what analog voltage it is giving respective digital value. Then,
+
+Aout = 512 * (5 V / 1023) = 2.5 V
+
+
